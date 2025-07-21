@@ -1,0 +1,210 @@
+  @import url('https://fonts.cdnfonts.com/css/games');
+  @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-weight: 100;
+    list-style: none;
+}
+ 
+body{
+    height: 100%;
+    width: 100%;
+}
+ 
+ 
+nav{
+    height: 90px;
+    width: 100%;
+    color: rgb(246, 246, 246);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 5;
+    background-color: transparent;
+    font-family: 'Games', sans-serif; 
+
+
+    .logo{
+    width: 40%;
+    display: flex;
+    justify-content: start;
+
+    img{
+        height: 400px;
+
+    }
+}
+
+
+
+.lst{
+    display: flex;
+    justify-content: end;
+    gap: 90px;
+    cursor: pointer;
+    font-size: 20px
+}
+li:hover:nth-child(1),
+li:hover:nth-child(2),
+li:hover:nth-child(3),
+li:hover:nth-child(4),
+li:hover:nth-child(5){                                              
+    transform: translatey(-7px);
+    transition-duration: 0.4s;
+}
+}
+
+.m1{
+    height: 100vh;
+    width: 100%;
+
+.w{
+    position: relative;
+    font-family: "Black Ops One", system-ui;
+    padding-top: 280px;
+    padding-left: 500px;
+    font-size: 90px;
+    color: wheat;
+}
+
+}    
+
+
+
+video{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+
+main:nth-child(2){
+
+    height:100vh;
+    width: 100%;
+    background-color: black;
+}
+ 
+.section-2{
+    height: 750px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: black;
+    background-image: url(./wp9024973.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+.box{
+    height:550px;
+    width: 750px;
+    font-size: 40px;
+    font-weight: bolder;
+    position: absolute;
+    top: 900px;
+    right: 160px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+h1{
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  padding-left: 70px;
+  font-family: "Black Ops One", system-ui;
+}
+
+.para{
+    position: relative;
+    top: 70px;
+    left: 60px;
+    font-size: 23px;
+    color: aliceblue;
+    line-height: 30px;
+
+}
+.para1{
+    position: relative;
+    top: 100px;
+    left: 60px;
+    font-size: 23px;
+    color: aliceblue;
+    line-height: 30px;
+
+}
+
+
+.gun{
+    height: 400px;
+    position: absolute;
+    left: 90px;
+    top: 890px;
+    filter: drop-shadow(5px 40px 13px #000000);
+    animation: Gun 2s linear  infinite;
+}
+
+}
+
+@keyframes  Gun {
+
+    0%{
+        transform:translatey(0px) 
+    }
+
+    50%{
+        transform:translatey(-20px) 
+    }
+    100%{
+        transform:translatey(0px) 
+    
+    }
+
+
+}
+
+
+button {
+    height: 55px;
+    width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   font-family: "Black Ops One", system-ui;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 0.8em 1.3em 0.8em 0.9em;
+  color: wheat;
+  background: #ad5389;
+  background: linear-gradient(to right, #d80202, #000000);
+  border: none;
+  letter-spacing: 0.05em;
+  border-radius: 16px;
+  position: relative;
+  left:670px;
+  top: 40px;
+}
+
+button svg {
+  margin-right: 3px;
+  transform: rotate(30deg);
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+button span {
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+button:hover svg {
+  transform: translateX(5px) rotate(90deg);
+}
+
+button:hover span {
+  transform: translateX(7px);
+}
